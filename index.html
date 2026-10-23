@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Zone</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071510;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #0c2118;
+      border-bottom: 1px solid #1b4830;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #7cff6b;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #7cff6b;
+    }
+
+    .hero {
+      min-height: 440px;
+      padding: 100px 8%;
+      background:
+        linear-gradient(90deg, #071510 15%, #071510cc 65%, #07151077),
+        url("https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1600&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tag {
+      color: #7cff6b;
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      margin: 20px 0;
+      line-height: 1.1;
+    }
+
+    h1 span {
+      color: #7cff6b;
+    }
+
+    .hero p {
+      color: #c1d0c7;
+      max-width: 470px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 14px 25px;
+      background: #7cff6b;
+      color: #071510;
+      border-radius: 7px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    .section {
+      padding: 65px 8%;
+    }
+
+    .section h2 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .section h2 span {
+      color: #7cff6b;
+    }
+
+    .subtitle {
+      color: #9eb2a5;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: #10271c;
+      border: 1px solid #204632;
+      border-radius: 13px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #7cff6b;
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #7cff6b;
+    }
+
+    .card p {
+      color: #b5c7bb;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .about {
+      background: #0c2118;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 650px;
+      margin: 18px auto 0;
+      color: #b5c7bb;
+      line-height: 1.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #a9b9ae;
+      border-top: 1px solid #204632;
+      font-size: 13px;
+    }
+
+    footer span {
+      color: #7cff6b;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 5%;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 80px 6%;
+        min-height: 400px;
+      }
+
+      .section {
+        padding: 48px 6%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🏏 CRICKET ZONE</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="tag">WELCOME TO CRICKET ZONE</div>
+
+    <h1>LIVE THE GAME.<br>
+      <span>LOVE CRICKET.</span>
+    </h1>
+
+    <p>
+      Cricket is more than a game. It is passion,
+      teamwork and the spirit to win.
+      Discover the exciting world of cricket!
+    </p>
+
+    <a href="#features" class="btn">EXPLORE NOW →</a>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Explore <span>Cricket</span></h2>
+
+    <p class="subtitle">
+      Everything you love about the game, all in one place.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&w=800&q=80"
+          alt="Cricket bat and ball">
+
+        <div class="card-content">
+          <h3>🏏 Batting</h3>
+          <p>
+            Master your shots, build your confidence
+            and enjoy the art of batting.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1593766827228-8737b9cd6cc0?auto=format&fit=crop&w=800&q=80"
+          alt="Cricket action">
+
+        <div class="card-content">
+          <h3>⚡ Bowling</h3>
+          <p>
+            Speed, accuracy and skill make every
+            delivery a chance to change the game.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=800&q=80"
+          alt="Cricket stadium">
+
+        <div class="card-content">
+          <h3>🏆 Big Matches</h3>
+          <p>
+            Celebrate the unforgettable moments,
+            exciting matches and cricket legends.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <h2>More Than <span>A Game</span></h2>
+
+    <p>
+      Cricket teaches us discipline, patience,
+      teamwork and determination. Whether you
+      play in the streets or dream of the
+      international stage, every journey starts
+      with passion and practice.
+    </p>
+
+    <a href="#home" class="btn">BACK TO TOP ↑</a>
+  </section>
+
+  <footer>
+    © 2026 <span>Cricket Zone</span>.
+    Made with passion for cricket.
+  </footer>
+
+</body>
+</html>
